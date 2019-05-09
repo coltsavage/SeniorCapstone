@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/colorAltPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:layout_height="75dp"
+        android:layout_width="75dp"
+        android:layout_margin="10dp"
+        android:layout_centerVertical="true"
+        android:id="@+id/icon"
+        >
+
+    </com.android.volley.toolbox.NetworkImageView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/name_view"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignTop="@id/icon"
+        android:layout_toEndOf="@id/icon" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/date_view"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@id/icon"
+        android:layout_below="@id/name_view"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="10dp"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/price_view"
+        />
+
+
+</RelativeLayout>

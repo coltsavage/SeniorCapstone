@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:layout_height="match_parent"
+    tools:context="pdx.com.nikeelevatorpitch.team.ProductLevelTwo">
+
+    <TextView
+        android:id="@+id/product_title"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textAlignment="center"
+        android:layout_marginTop="15dp"
+        android:text="@string/hello_blank_fragment"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <include layout="@layout/content_product_level_switcher"
+        android:id="@id/lvl_nav"/>
+
+
+    <TextView
+        android:id="@+id/lvl_3_desc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_below="@+id/product_title"
+        android:layout_marginStart="15dp"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:layout_toStartOf="@+id/lvl_nav">
+
+    </TextView>
+
+</RelativeLayout>
